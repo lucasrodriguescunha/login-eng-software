@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centralizar o conteúdo na tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #eef2f3, #dfe7fd);
+    color: #333;
+}
+
+/* Container do formulário */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Estilo do formulário */
+form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+/* Rótulos */
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Efeito de foco */
+input:focus {
+    border-color: #6c7ae0;
+    outline: none;
+    background: #fff;
+}
+
+/* Botão de envio */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #6c7ae0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #5a68c3;
+}
+
+/* Acessibilidade */
+input:focus, button:focus {
+    outline: 3px solid #6c7ae0;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
